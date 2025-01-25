@@ -1,17 +1,36 @@
 /*Google Font Link*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
+/* CSS Variables */
+:root {
+  --background-color: #d8c29c;
+  /*Baige*/
+  --Nav-color: #2e231d;
+  /*dark brown*/
+  --primary-font: "Sofia Sans Semi Condensed", serif;
+  --secondary-font: "Poiret One", sans-serif;
+  --primary-color: #3d231d;
+  /* deep brown */
+  --secondary-color: #664d31;
+  /*tan*/
+  --highlight-color: #cc7c40;
+  /* Orange */
+  --highlight-color-light: #88715d;
+  /*light pale brown*/ 
+}
 
+/* Global styles */
 body {
-  background-color: blue;
-  }
-  
-  h1{
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;
-color: pink;
-  }
+  background-color: var(--background-color);
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+}
 
-  p{
-    color: palevioletred;
-    font-family: 'Poiret One', sans-serif;
-  }
+h1,h2,h3 {
+  font-family: var(--primary-font);
+  color: var(--Nav-color);
+}
+
+.sub-heading {
+color: var(--primary-color);
+}
