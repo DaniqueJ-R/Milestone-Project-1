@@ -1,5 +1,5 @@
 /*Google Font Link*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 /* CSS Variables */
 :root {
@@ -8,7 +8,7 @@
   --Nav-color: #2e231d;
   /*dark brown*/
   --primary-font: "Sofia Sans Semi Condensed", serif;
-  --secondary-font: "Poiret One", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-color: #3d231d;
   /* deep brown */
   --secondary-color: #664d31;
@@ -33,4 +33,5 @@ h1,h2,h3 {
 
 .sub-heading {
 color: var(--primary-color);
+
 }
