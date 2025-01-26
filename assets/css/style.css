@@ -63,10 +63,27 @@ background-color: var(--Nav-color);
   padding-right: 10px;
 }
 
+/* Heading */
+
+#hero{
+  transition: transform 2s ease, opacity .5s ease-out;
+}
+
+#hero .carousel-item img {
+  object-fit: cover; /* Ensures images don't stretch weirdly */
+  height: 500px;
+}
+
+#hero .logo{
+  font-family: var(--logo-font);
+  font-size: 60px;
+  margin: 51px;
+}
+
 
 
 /* Buttons */
-/*Buttons*/
+
 .custom-button-filled{
   background-color: var(--background-color);
   border: 2px solid var(--background-color);
