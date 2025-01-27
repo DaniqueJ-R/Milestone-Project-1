@@ -25,7 +25,7 @@ body {
   background-color: var(--background-color);
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-  padding-top: 70px; /*Added for nav bar space to not overlap as it is now fixed top*/
+  padding-top: 60px; /*Added for nav bar space to not overlap as it is now fixed top*/
 }
 
 h1,h2,h3 {
@@ -36,6 +36,11 @@ h1,h2,h3 {
 .sub-heading {
 color: var(--primary-color);
 
+}
+/*removed padding from phone screen*/
+.row>*{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* Navbar*/
@@ -67,6 +72,7 @@ background-color: var(--Nav-color);
 
 #hero{
   transition: transform 2s ease, opacity .5s ease-out;
+  width: 100%;
 }
 
 #hero .carousel-item img {
@@ -77,8 +83,44 @@ background-color: var(--Nav-color);
 #hero .logo{
   font-family: var(--logo-font);
   font-size: 60px;
-  margin: 51px;
+  margin: 7px;
+  padding-top: 320px;
 }
+
+
+/*Chat GPT code*/
+/* Override Bootstrap's container to remove width restrictions */
+header.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Ensure the images take up the full width and height of the carousel */
+#hero img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Make the carousel caption cover the entire photo */
+.carousel-caption {
+  position: absolute; /* Overlay on the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Covers the full height of the carousel item */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.carousel-caption h1{
+  bottom: 0;
+}
+
+/* Optional: Logo adjustments */
+h1.logo {
+  font-size: 3rem; /* Adjust font size */
+  color: #fff;
+}
+
 
 
 
@@ -108,6 +150,14 @@ background-color: var(--Nav-color);
   color: white;
 }
 
+/* Small screens and up (Added by source)*/
+@media screen and (max-width: 768px) {
+  /* decreases font size in events table when screen size is large enough */
+  .carousel-item logo{
+    font-size: 10px;
+  }
+
+}
 
 /* grid visualisation CSS for testing 
 
