@@ -37,6 +37,7 @@ h1,h2,h3 {
 color: var(--primary-color);
 
 }
+
 /*removed padding from phone screen*/
 .row>*{
   padding-left: 0px;
@@ -150,13 +151,61 @@ h1.logo {
   color: white;
 }
 
-/* Small screens and up (Added by source)*/
-@media screen and (max-width: 768px) {
-  /* decreases font size in events table when screen size is large enough */
-  .carousel-item logo{
-    font-size: 10px;
-  }
+/* Footer */
 
+#footer {
+  background-color: var(--Nav-color);
+  text-align: center;
+  color: #fff;
+}
+
+#footer h2,h3{
+  color: #fff;
+  padding-top: 25px;
+}
+
+#footer i{
+  color: #fff;
+  margin-right: 7px;
+  font-size: 1.2rem;
+}
+
+.social-links-footer i{
+  color: #fff;
+  padding-right: 7px;
+}
+
+#footer .social-links-footer i{
+  color: white;
+  font-size: 1.9rem;
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+#footer .social-links-footer i:hover{
+  color: var(--background-color);
+}
+
+#footer .table-dark *{
+  background-color: transparent;
+}
+
+#footer .table {
+  font-size: 1rem;
+}
+
+/*Media Queries*/
+
+/* Small screens and up (Added by source)*/
+@media screen and (min-width: 576px) {
+  /* increase font size in events table when screen size is large enough */
+  #footer .table {
+      font-size: 1rem;
+  }
+  .student-discount {
+      font-size: 1rem;
+  }
 }
 
 /* grid visualisation CSS for testing 
