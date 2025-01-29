@@ -50,6 +50,12 @@ hr{
   margin: 0%;
 }
 
+/*removed margine from right side of screen. */
+.row{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
 /* Navbar*/
 
 #navbar{
@@ -145,13 +151,21 @@ h1.logo {
 #newsletter{
   padding: 20px 25px;
 }
-
+/* Button for newsletter*/
 #newsletter .custom-button-filled{
   margin-top: 20px;
 }
 
-#about-us{
-  padding: 20px 25px;
+
+/* Newsletter popup*/
+#newsletter-model{
+  padding: 0px 10px;
+  text-align: center;
+}
+
+#newsletter-model button{
+  margin: 11px 14px;
+  text-align: center;
 }
 
 .modal-footer .custom-button-outlined{
@@ -159,6 +173,31 @@ h1.logo {
 }
 .modal-footer .custom-button-outlined:hover{
   border-color: var(--highlight-color);
+}
+
+.modal-footer div{
+  margin-right: 75px;
+}
+
+/*About us*/
+
+#about-us{
+  padding: 20px 25px;
+}
+
+/*Pricing and Scheduling */
+
+#price-sched{
+  padding: 20px 25px;
+}
+
+#price-sched .table {
+  font-size: 1rem;
+}
+
+.table>:not(caption)>*>* {
+background-color: transparent;
+border-color: var(--Nav-color);
 }
 
 
@@ -245,9 +284,10 @@ h1.logo {
 /* Small screens and up (Added by source)*/
 @media screen and (min-width: 576px) {
   /* increase font size in events table when screen size is large enough */
-  #footer .table {
-      font-size: 1rem;
-  }
+  #footer table {
+    font-size: 1rem;
+}
+
   .student-discount {
       font-size: 1rem;
   }
@@ -258,6 +298,16 @@ h1.logo {
   
   #about-us{
     padding: 20px 13px;
+  }
+
+  #newsletter-model{
+    padding: 0px 10px;
+    text-align: left;
+  }
+
+  #newsletter-model button{
+    margin-right: 3px;
+    text-align: center;
   }
 }
 
