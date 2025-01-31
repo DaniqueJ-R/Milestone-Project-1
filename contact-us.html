@@ -67,7 +67,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="schedule.html#booking" class="btn ms-lg-3 custom-button-outlined">Book Now!</a>
+                            <a href="contact-us.html#booking-form" class="btn ms-lg-3 custom-button-outlined">Book Now!</a>
                         </li>
                     </ul>
                 </div>
@@ -75,22 +75,77 @@
         </nav>
     </div>
 
+    <!-- Header with carousel -->
+    <header class="container">
+        <div class="row">
+            <div class="col-12">FAQ</div>
+            <div class="col-12">FAQ intro</div>
+        </div>
+    </header>
+
     <!-- main element to hold all key sections of the schedule page. It is not part of the grid structure -->
     <main>
-        <!-- Classes section -->
+        <!-- Sec 1 questions section -->
         <section class="container">
             <div class="row">
-                <div class="col-12">Success heading</div>
-                <p class="col-12 col-md-7">Text to thak user for interest, form was sent and to check email</p>
+                <div class="col-12">Sec 1</div>
+                <div class="col-12">Image card 1</div>
+            </div>
+
+                    <!-- Sec 2 questions section -->
+            <div class="row">
+                <div class="col-12">Sec 2</div>
+                <div class="col-12">Image card 1</div>
             </div>
         </section>
 
-
-
+         <!-- Booking inquiry form section -->
+         <section id="booking-form" class="container section">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="text-center">Booking Inquiry</h2>
+                    <form action="success.html" method="get">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input class="form-control" id="name" name="name" type="text" required>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input class="form-control" id="email" name="email" type="email" required>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input class="form-control" id="phone" name="phone" type="number" required>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="contact-reason" class="form-label">Contact Reason</label>
+                                <select id="contact-reason" class="form-select" name="contact-reason" required>
+                                    <option value="" selected>Select</option>
+                                    <option value="book-a-class">Book a class</option>
+                                    <option value="booking-query">Booking Inquiry</option>
+                                    <option value="equipment">Equipment Rental</option>
+                                    <option value="inquiry">General Inquiry</option>
+                                    <option value="reschedule">Reschedule</option>
+                                    <option value="cancel">Cancellation</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                                <label for="date" class="form-label">Class Date</label>
+                                <input class="form-control" id="date" name="date" type="date" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" rows="4" id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn custom-button-filled">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
     </main>
-
-
 
     <!-- Footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
