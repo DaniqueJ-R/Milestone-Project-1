@@ -303,6 +303,38 @@ border-radius: 1px;}
 }
 
 /* Contact us page*/
+
+/*FAQs*/
+
+#faq-header{
+  padding-top: 25px;
+}
+
+#faq-section-heading{
+  padding: 20px 25px;
+}
+
+#faq{
+  padding: 20px 25px;
+
+}
+/* */
+#faq .accordion>*{
+  --bs-accordion-color: var(--primary-color);
+  --bs-accordion-bg: var(--background-color);
+  border: 0px;
+} 
+
+#faq .accordion-button{
+  background-color: var(--Nav-color);
+  color: var(--background-color);
+}
+
+#faq .accordion-button:not(.collapsed){
+  background-color: var(--highlight-color);
+  color: var(--Nav-color);
+}
+
 /* Booking Table */
 
 #booking-form {
