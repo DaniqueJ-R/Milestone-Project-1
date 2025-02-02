@@ -56,6 +56,10 @@ hr{
   margin-right: 0%;
 }
 
+.hidden-heading {
+  display: none;
+}
+
 /* Buttons */
 
 .custom-button-filled{
@@ -120,6 +124,7 @@ background-color: var(--Nav-color);
   padding-right: 10px;
 }
 
+/* Index Page */
 /* Heading index */
 
 #hero{
@@ -228,7 +233,9 @@ border-color: var(--Nav-color);
 }
 
 /*Classes page*/
+/* Header section */
 
+/* Classes section */
 #classes{
   padding: 2rem;
   margin-bottom: 1rem;
@@ -244,6 +251,45 @@ border-color: var(--Nav-color);
 
 #classes .card>*{
 border-radius: 1px;}
+
+/* Times Section */
+#times {
+  background: url("../images/Timeline\ Photo.jpg") no-repeat center/cover;
+  /*makes background responsive without needing media query*/
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+}
+
+#times div {
+  color: var(--background-color);
+  background-color: rgba(0, 0, 0, .75);
+  padding: 5px;
+  text-align: center;
+  /*This will not wrap the text on screens 400px and lower.
+  Each div will expand to available space*/
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* Creates a grid of meetup time divs over the background image */
+  border: 5px solid var(--secondary-color);
+}
+
+#times h3 {
+  /*overrides default h3 colour set for page*/
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* Video */
+#video{
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Contact us page*/
 /* Booking Table */
