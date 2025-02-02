@@ -248,6 +248,18 @@ border-color: var(--Nav-color);
   margin-bottom: -0.5rem;
 }
 
+/* Video */
+video {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
 /*Classes page*/
 /* Header section */
 
@@ -315,14 +327,8 @@ border-radius: 1px;}
   margin: auto;
   }
 
-/* Video */
-#video{
 
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 /* Contact us page*/
 
@@ -340,7 +346,7 @@ border-radius: 1px;}
   padding: 20px 25px;
 
 }
-/* */
+
 #faq .accordion>*{
   --bs-accordion-color: var(--primary-color);
   --bs-accordion-bg: var(--background-color);
@@ -480,6 +486,13 @@ border-radius: 1px;}
      min-height: 390px;
   }
 
+  video {
+    width: 100%;
+    height: auto;
+    max-width: 430px;
+    margin: 4rem 0.5rem;
+  }
+
 
   
 }
@@ -494,6 +507,10 @@ border-radius: 1px;}
     #testemonies{
       min-height: 290px;
    }
+   video {
+   max-width: 474px;
+   margin: 30px 5.5rem;
+  }
 }
 
 /* grid visualisation CSS for testing DELETE AFTER! 
