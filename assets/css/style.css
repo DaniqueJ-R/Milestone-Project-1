@@ -232,6 +232,22 @@ background-color: transparent;
 border-color: var(--Nav-color);
 }
 
+/* testemonies */
+
+#testemonies{
+  padding: 4px 25px;
+  min-height: 455px;
+}
+
+#testemonies p{
+  padding: 23px 25px;
+
+}
+
+#testemonies h3{
+  margin-bottom: -0.5rem;
+}
+
 /*Classes page*/
 /* Header section */
 
@@ -282,6 +298,12 @@ border-radius: 1px;}
   font-size: 2rem;
 }
 /* Disount line */
+
+#discount{
+  display: flex;
+  justify-content: end;
+}
+
 #discount p{
   background-color: var(--highlight-color);
   color: white;
@@ -370,7 +392,7 @@ border-radius: 1px;}
   color: #fff;
 }
 
-#footer h2,h3{
+#footer h2, #footer h3{
   color: #fff;
   padding-top: 25px;
 }
@@ -454,6 +476,10 @@ border-radius: 1px;}
 
   }
 
+  #testemonies{
+     min-height: 390px;
+  }
+
 
   
 }
@@ -464,6 +490,10 @@ border-radius: 1px;}
     #booking-form {
       margin: 5% 6%; 
     }
+
+    #testemonies{
+      min-height: 290px;
+   }
 }
 
 /* grid visualisation CSS for testing DELETE AFTER! 
