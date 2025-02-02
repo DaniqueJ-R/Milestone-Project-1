@@ -281,6 +281,17 @@ border-radius: 1px;}
   font-weight: 700;
   font-size: 2rem;
 }
+/* Disount line */
+#discount p{
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 5px 10px;
+  max-width: 300px;
+  /*Addded from source code*/
+  font-size: 0.8rem;
+  display: block;
+  margin: auto;
+  }
 
 /* Video */
 #video{
