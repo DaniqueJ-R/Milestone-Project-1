@@ -16,8 +16,6 @@
   /*tan*/
   --highlight-color: #cc7c40;
   /* Orange */
-  --highlight-color-light: #88715d;
-  /*light pale brown*/ 
 }
 
 /* Global styles */
@@ -26,7 +24,6 @@ body {
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   padding-top: 60px; /*Added for nav bar space to not overlap as it is now fixed top*/
-  padding-left: -100px;
 }
 
 h1,h2,h3 {
@@ -230,7 +227,7 @@ h1.logo {
 }
 
 #price-sched .table {
-  font-size: 1rem;
+  font-size: 0.83rem;
 }
 
 .table>:not(caption)>*>* {
@@ -475,6 +472,10 @@ border-radius: 1px;}
 
   .modal-footer div{
     margin-right: 75px;
+  }
+
+  #price-sched .table {
+    font-size: 1.1rem;
   }
 
   #booking-form {
