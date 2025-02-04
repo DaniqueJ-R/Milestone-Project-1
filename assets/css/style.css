@@ -124,6 +124,11 @@ background-color: var(--Nav-color);
   padding-right: 10px;
 }
 
+#navbar .navbar-collapse {
+  transition: height 0.3s ease-in-out;
+}
+
+
 /* Index Page */
 /* Heading index */
 
@@ -266,6 +271,7 @@ video {
 /* Classes section */
 #classes{
   padding: 2rem;
+  max-width: 1000px;
 }
 
 #classes .card{
