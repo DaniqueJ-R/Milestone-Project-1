@@ -1,131 +1,435 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Danique Jones-Rhule,
+# Zenair Wellness Center
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Website Mockup](assets/README/responsive%20image.png)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+[Link to Live Website](https://daniquej-r.github.io/Milestone-Project-1/index.html)
 
-## Gitpod Reminders
+[GitHub Repo](https://github.com/DaniqueJ-R/Milestone-Project-1)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+*** 
 
-`python3 -m http.server`
+## About  
 
-A blue button should appear to click: _Make Public_,
+The Zenair Wellness Center is a service that provides structured and fun fitness classes for all ages and genders. Its focus is on strengthening the bond between person and Body and taking care of mental and physical health. Patrons using this website can explore alternative fitness options to suit their lifestyles, such as scheduling, pricing, contact information, and a booking form for interested and recurring participants. 
 
-Another blue button should appear to click: _Open Browser_.
+***
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Index – Table of Contents
 
-A blue button should appear to click: _Make Public_,
+* [User Experience R&D](#user-experience-research-and-design)
+ * [Strategy](#Strategy)
+ * [Scope](#Scope)
+ * [Structure](#Structure)
+ * [Skeleton](#Skeleton)
+ * [Surface](#Surface)
+* [Features](#features)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credit)
 
-Another blue button should appear to click: _Open Browser_.
+*** 
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## User Experience Research and Design
 
-To log into the Heroku toolbelt CLI:
+### Strategy
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+This website is targeted at active members and potential members of Zenair Wellness Center, so specific information such as pricing, location, and information on the classes offered are the main aspects of the design for this website. The website should inform users of pricing, discounts, schedule, location, contact information, and opening hours. There is a form to make booking a class or sending any inquiry to the studio easier to ensure more clients.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+#### Leading User Stories
 
-### Connecting your Mongo database
+* As a potential gym member, I need easy navigation and a user-friendly design, including a responsive layout for my device to find information quickly and efficiently without frustration. (Must Have)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+* As a Prospective Customer, I need to find essential information such as location, contact details, and opening hours clearly and concisely so I can easily plan my visit or contact the gym. (Must Have)
 
-------
+* As a potential member, I want to explore a selection of different classes on the website to discover other services and decide which ones I might be interested in trying. (Must Have)
 
-## Release History
+* As an active gym member, I need to see the class schedules with the time and date for each weekly class to get there on time and fit into my schedule. (must have)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* As a potential gym member, I need a clear page to confirm my inquiry or booking has been completed to know my inquiry was sent and when to get a response (Must have)
 
-**June 18, 2024,** Add Mongo back into template
+* As a potential gym member, I need high-definition photos and videos clearly showing life at the wellness centre and what classes generally entail. (Must have)
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+* As a potential gym member, I need an easy way to contact the gym from the website for inquiries regarding bookings, cancellations, and general inquiries (Should have)
 
-**May 28 2024:** Fix Mongo and Links installs
+* As a potential member, I want a section where I can easily find the answers to questions I may have about classes and expectations before I make a decision (Could have)
 
-**April 26 2024:** Update node version to 16
+* As a Regular Customer, I want to sign up for newsletters and updates to stay informed about special offers, new games, and upcoming events. (Could Have)
 
-**September 20 2023:** Update Python version to 3.9.17.
+* As a potential member, I want to see other members' experiences and testimonials so I can feel more comfortable about what to expect (Could Have)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Primary strategic aims for the website
+* Advertise wellness centres for the betterment of people who wish to exercise mindfully.
+* Advertise various classes to increase revenue that funds the cost of the studio and instructors.
+* Introduce alternative methods of health and wellness to a boarder audience. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+How will I achieve this?
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Overall, the site aims to have a relaxing and 'Zen' ambience from the initial view
+- The home page contains necessary elements such as:
+- A captivating cover photo to grab users' attention off the bat
+- All the initial basic information someone may need and indicate where to find more information. 
+- An optional newsletter sign-up so they can receive information on possible parties and discounts
+- The schedule and pricing page provides class descriptions, offerings, transparent pricing, and a booking section for easy user understanding.
+- The inquiry page will have a relevant FAQ section and contact us form.
+- The footer provides the user with contact details and opening hours for them to get in touch
+- The footer provides the user with social links so they can learn more about us
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Scope
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+A more thorough approach will be adopted to ensure users have all the needed information in ready-to-view locations per the strategy section mentioned above. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Please see the features below: 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### In-Scope Features
+* Homepage that clearly informs what the website represents and offers.
+* A menu that intuitively navigates to the other website pages.
+* Imagery from classes to help convey the aim of the website and individual pages.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Provide information on; 
+ * Each class offered and a description of each class
+ * The schedule and instructor for each class,
+ * The location and contact information,
+ * The pricing and any discounts available for each class
+ * A booking form for classes
+ * A section with commonly asked questions
+ * Testimonies from previous and current members,
+ * Allow users to stay informed of changes and discounts using a newsletter.
+ * A carousal of images as the Hero images 
+ * Easy navigation from page to page and social media 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Out-of-Scope Features
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* **Online booking system** Each class has a maximum capacity, which members have to book beforehand to participate in each class. We wish to implement a calendar system showing each class on their respective dates and times, with class availability and pricing making it easier for members to book. They can also reserve gym equipment rental (Yoga mat, dumbbells, etc) for their classes.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* **Online payment system** To follow or be developed in parallel with the 'Online booking system', users and the instructors could benefit from having a payment system to avoid handling cash and to know how many members will be present in each class. Users could also reserve several classes at a time.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* **User accounts** Users could benefit from having an account where they can track class attendance, payments, and potential rewards. For example, every 10th class attended is free.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* **Most popular classes** This tag lists the most popular classes, informing users what classes others gravitate to most. It also provides more information on these classes, their expectations, benefits, and any discounts. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Scrapped Scope Features
 
-------
+* **Separated Booking Form from Inquiry Form** Initially, the inquiry form would remain on the Contac Us page, and a separate smaller form specifically for booking classes would have been on the Classes page; however, it was seen that as the two were similar, and the chances of users having questions or requests along with their bookings increase when taking into consideration the newest members booking for the first time, it was decided to merge the tables, causing less confusion for members. 
 
-## FAQ about the uptime script
+This idea was initially considered when making the Wireframes, hence the difference in page layouts compared to the finished product. 
 
-**Why have you added this script?**
+* **Call to action button under each class** This idea was first to have a separate call to action button so users could select a class and be taken to the above form with the class already selected. Later, this morphed into the Booking System mentioned above, where users would be able to have an interactive calendar of each class, making bookings more streamlined for newer users. Users would also be able to make payments online. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Structure
 
-**How will this affect me?**
+This section will speak to the intended structure of the overall site across the four pages (including the homepage):
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* A homepage with a horizontal navigation bar will greet users across each page. This will lead to Home, Classes, and Contact Us pages with a button leading them directly to the Booking form. It will also have links to our Socials for easy access
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* The homepage header, navigation menu, and footer will be consistent throughout the site. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* To assist users, the homepage will first display a little section about Zenair Wellness Center and our goals, with a section for users to sign up for our newsletters. 
 
-**So….?**
+* Afterwards, the essential information for the class days, dates, times, and cost. 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* Lastly, there will be a section for the previous testimonies and a promotional video to help users better understand what we offer and why. 
 
-**Can I opt out?**
+* The Footer will contain further essential information for users, such as Contact information, Social Media links, opening hours, and a map of the studio, to attract users who are interested and have already reached the end of the page and get a better idea of our location. 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Skeleton
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Key to this website being accessible to all active and potential members is a simple but sleek design that is intuitive to navigate and clear to read. 
+Retaining a clean and straightforward design throughout all pages is crucial to avoid confusion for potential members, as this can deter them from continuing to the booking form. 
 
-**Anything more?**
+The homepage will be the hub of the website, where essential information and the initial call to action are displayed. To support the users' journey, there is a logical navigation menu that progressively reveals information in the order the user expects;
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+ * Want the general information on classes offered? Click the dropdown from 'Home to Pricing'.
+ * Want to know previous members' experience? Click the dropdown from 'Home to Testimonies'.
+ * Want more information on the classes we offer? Click 'Classes'.
+ * Want more information on the class schedule? Click 'Classes to Schedule'.
+ * Have further questions on classes offered? Click 'Contact us'.
+ * Want to book a class? Click the call to action button on all pages, 'Book a Class'.
 
----
+I designed detailed wireframes for this project to bring my vision for the site to life. Check out the links below to explore the mobile, tablet, and desktop mockups: [Balsamiq](https://balsamiq.com/wireframes/) (see samples below—all wireframes can be found within the [Repo](wireframes)).
 
-Happy coding!
+Consideration was given to desktop, tablet, and mobile users. The website is responsive through differing screen widths, with the final design being responsive at screen widths from 320-640px, 980-1200px, 1200-1600px, and 1600-5000px. This should ensure accessibility on any device or desktop monitor.
+
+#### Homepage Wireframe 
+
+![Homepage wireframe](assets/README/home-page.png)
+
+#### Classes Wireframe 
+
+![Classes wireframe](assets/README/classes-page.png)
+
+#### Contact Us Wireframe 
+
+![Contact us wireframe](assets/README/contact-us-page.png)
+
+#### Success Wireframe 
+
+![Success wireframe](assets/README/success-page.png)
+
+### Surface
+
+Considering that retention and invitation to new members were a key design criterion, the developed visual language offers contrast using a simple yet calming colour palette, readable and sleek fonts, and clear layouts. Throughout the website, this language has been applied consistently to promote a consistent user experience, with the most important links and information easily recognized.
+
+#### Color Scheme
+
+From the beginning, I knew I wanted Earth tones to establish the tone of the site and the company's goal. I then located photos that matched the colour scheme and selected suitable colours using IMAGECOLORPICKER.com. I then used the colour grader site to check the contrast scores. The grid showed me which background colours match which text colour, so the site is accessible to everyone.
+
+#d8c29c
+#2e231d
+#3d231d
+#664d31
+#cc7c40
+
+[Colour contract checker](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23d8c29c%0D%0A%232e231d%0D%0A%233d231d%0D%0A%23664d31%0D%0A%23cc7c40%0D%0A%2388715d&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) 
+
+#### Classes Wireframe 
+
+![Colour contrast grid](assets/README/colour-contrast.png)
+
+#### Images
+
+As the photos were not provided for this project beforehand, a decision was made to use free images from online sources to convey what the website represents. It was important for the images to communicate that people of differing ages and genders participated in different classes, keeping with the company's theme of inclusivity for all. 
+
+Images were sourced from [Freepiks](https://freepiks.com/) for the homepage and throughout the project. All images have alt attributes and/or Arial labels to support users with screen readers and the website's ranking.
+
+#### Video
+
+The video is also a mockup generated using the AI site [Ai.invideo](https://ai.invideo.io/) as a generated promotional video detailing more of Zenair Wellness Center's values and general goal for the members. 
+
+***
+
+## Features
+
+### Universal Features
+
+![Nav Menu Screenshot](assets/README/nav-bar-image.png)
+
+##### Navigation Menu
+
+The header element, complete with the Zenair logo and Navigation Menu (nav-menu), is a constant throughout the website. The layout has been centrally and fixed to the top of the page. The font mixed with the colour pallet was specifically selected to provide a friendly, comfortable feel for new users. The logo will intuitively return the user to the homepage, and depending on the page you are on, the nav-menu has matching dropdowns for each section on the respective pages, making it easier for users to navigate each page. 
+
+For devices under 640px wide, the nav-menu reduces to a collapsible dropdown style, with menu options aligned to the left for ease of selection for most users.
+
+![Footer Screenshot](assets/README/footer-image.png)
+
+##### Footer 
+
+The dark brown background, matched with the white text, follows the same design as the nav menu at the top of the page. This theme aims to be complimentary without distracting users from page content. The footer's role on this website is to clearly state the company location, contact information, opening hours, official social media accounts, and a map with the studio's location, making it easier for users to visualize their journeys at first glance. 
+
+The footer has been divided into three sections: the left side contains contact information with responsive icons to support user navigation, the right side lists the studio's opening hours, and the bottom section includes the aforementioned map spread across the footer and page itself. As with the nav menu, the layout and fonts are styled appropriately for devices under 640px wide.
+
+##### Metadata
+
+To support the following strategic aims;
+ * Advertise fitness classes for the betterment of self in your fitness or healing journey.
+ * Advertise fitness classes to increase revenue and fund the cost of the instructors and overall studio maintenance. 
+Meta data has been included within the website's HTML head element to increase the traffic to this website. Furthermore, the individual site pages have been titled appropriately as another method of informing users where they have navigated.
+
+##### Redirection
+
+A 'Thank you' page has been added to the website to confirm a booking or inquiry. This page informs users that their message was successfully sent and that they should receive an email response within 1-3 business days.  
+
+### Page-specific features
+
+![FAQ Screenshot](assets/README/faq-image.png)
+
+##### FAQ's Vertical Accordion
+
+To ensure users are given ample knowledge before attending their classes, the section above the inquiry form contains nine commonly asked questions to inform users about attending a class. It was essential to ensure the page wasn't overloaded with content, which may result in users being deterred and not finding the answer to their questions. With this in mind, the vertical accordion provides a concise list of the questions, with answers available as a dropdown when required. This FAQ format can be easily amended if Zenair requires any changes to information or wishes to add new questions.
+
+![Schedule Screenshot](assets/README/timetable.png)
+
+##### Sign-up Form
+
+To deliver the strategic aim of "Introduce alternative methods of health and wellness to a boarder audience", a page dedicated to questions, answers, and contacting the staff was implemented. The form requests six critical pieces of information to best assist users: Full Name, Phone Number, Email, contact reason, Date of class, and a message to explain the query. This ensures that users are answered thoroughly and there is a lesser chance of miscommunication. 
+
+![Sign-up Form Screenshot](assets/README/booking-form.png)
+
+##### Sign-up Form
+
+To deliver the strategic aim of "Introduce alternative methods of health and wellness to a boarder audience", a page dedicated to questions, answers, and contacting the staff was implemented. The form requests six critical pieces of information to best assist users: Full Name, Phone Number, Email, contact reason, Date of class, and a message to explain the query. This ensures that users are answered thoroughly and there is a lesser chance of miscommunication. 
+
+***
+
+## Testing 
+
+Throughout the Build phase, Chrome Developer Tools are used to ensure all pages are developed to remain intuitive, responsive, and accessible across all device widths. The pages were designed at 1400px wide, reducing to 320px for mobile devices. These tools and others were used for the Testing phase. 
+
+There are still minor issues on the site that can be a slightly unfavourable experience on the project for tablet and mobile users, where the nav-menu does not automatically collapse after using the dropdown for each second. The nav-menu has to be closed manually to see the page, however, they are taken to the correct location on each page.
+
+![Nav-menu area not colappsing after selecting dropdown option](assets/README/nav-bar-issue.png)
+
+The following sections summarise the tests and results.
+
+### Code
+
+Code has been tested using the [HTML Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/) with the following results:
+
+* **index.html** - 0 Errors / 0 Warnings
+* **classes.html** - 0 Errors / 0 Warnings
+* **contact-us.html** - 0 Errors / 0 Warnings
+* **success.html** - 0 Errors / 0 Warnings
+* **style.css** - 0 Errors / 1 Warning '::-webkit-details-marker is a vendor extended pseudo-element' - expected from using the Vertical Accordion from CodePen. CSS code is required for the functionality of the Vertical Accordion and, therefore, will remain a known exception.
+
+### Browser
+
+To ensure site visitors can view and interact with Zenair's website, cross-browser testing was performed on the test scenarios listed in the table below.
+
+To achieve a 'Pass,' the following criteria had to be met across all website pages;
+1. All nav-menu links work as designed and lead to the correct locations. 
+2. All images/videos are loaded and displayed correctly at the differing media queries
+3. All text uses 'Montserrat Alternates' and 'Sofia Sans Semi Condensed' font style
+4. All external links activate when clicked and open in a new tab or browser window
+5. The form as part of the 'Contact Us' page allows full completion and submission
+6. The form as part of the 'Contact Us' page prevents the form from being sent unless all areas are filled
+7. Header elements can be clicked to return users to the homepage from any site page
+8. All pages retain layout integrity throughout the Body and across the differing media queries
+9. All Page footers are responsive, with hovering changes responsive to the mouse
+
+| Browser                    | Version | Test Facility  | Pass | Partial Pass | Fail | Fail                                                   |
+| -------------------------- | ------- | -------------- | ---- | ------------ | ---- | --------------------------------------------------------------------------------------- |
+| Microsoft Edge (Win 11)    | 96      | ASUS Laptop   | Pass |              |      |                                                                                         |
+| Google Chrome (Win 11)     | 96      | ASUS Laptop   | Pass |              |      |                                                                                         |
+| Firefox (Win 11)           | 95      | ASUS Laptop   | Pass |              |      |                                                                                         |
+| Safari (macOS Mojave)      | 12      | lambdatext.com | Pass |              |      |                                                                                         |
+| Opera (macOS Sierra 10.12) | 74      | lambdatext.com | Pass |              |      |                                                                                         |
+
+### Device
+
+Testing was performed on the test scenarios listed in the table below to ensure visitors can view and interact with Zenair's website on differing devices.
+
+To achieve a 'Pass,' the following criteria had to be met across all website pages;
+1. All nav-menu links work as designed and lead to the correct locations. 
+2. All images/videos are loaded and displayed correctly at the differing media queries
+3. All text uses 'Montserrat Alternates' and 'Sofia Sans Semi Condensed' font style
+4. All external links activate when clicked and open in a new tab or the app
+5. The form as part of the 'Contact Us' page allows full completion and submission
+6. The form as part of the 'Contact Us' page prevents the form from being sent unless all areas are filled
+7. Header elements can be clicked to return users to the homepage from any site page
+8. All pages retain layout integrity throughout the Body and across the differing media queries
+
+| Device       | Type               | Pass | Partial Pass | Fail |                                                                                                                                                     |
+| ------------ | ------------------ | ---- | ------------ | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mobile Phone | iPhone SE          | Pass |              |      |  |
+| Mobile Phone | Samsung Galaxy S20 Ultra | Pass |              |      |
+| Tablet       | iPad Air        | Pass |              |      |                                                                                   |
+| Laptop       | ASUS Zenbook 14"   | Pass |              |      |                                                                                                     
+### Accessibility
+
+Each page of this website has been tested with [Wave (Web Accessibility Evaluation Tool)](https://wave.webaim.org/) with the following errors and recommendations that were fixed: 
+
+* **2 Contrast Errors** Adequate text contrast is necessary for all users, especially users with low vision regarding the left and right controls in the testimonies area.
+
+* **HTML5 video or audio** video defines videos such as movie clips or other video streams. Video content with audio must have synchronised captions and a transcript. Once a transcript is received, it will be updated.
+
+* **Skipped heading level** The class titles' heading level is skipped on the classes page. This was fixed by changing them to H£ tags instead of h5, and the above were already H2 tags. 
+
+### Performance
+
+Using Lighthouse performance testing within Chrome Developer Tools, every page's performance was tested on desktop and mobile devices. The results from this testing are outlined in the tables below. The tests highlighted a constant theme of image sizes being too large and elements such as bootstraps and Google fonts causing a longer loading time for users. All files have been appropriately right-sized and formatted to improve the user experience, and we will continue to work on these elements to reduce the loading time. In the meantime, the "class="d-block w-100" was removed from the carousel images as suggested by Lighthouse. 
+
+**Lighthouse test - Mobile**
+
+Lighthouse Home Mobile
+
+![Lighthouse Home Mobile](assets/README/index-lighthouse-mobile.png)
+
+Lighthouse Class Mobile
+
+![Lighthouse Class Mobile](assets/README/classes-mobile.png)
+
+Lighthouse Contact Us Mobile
+
+![Lighthouse Contact Us Mobile](assets/README/contact-us-mobile.png)
+
+Lighthouse Success Mobile
+
+![Lighthouse Success Mobile](assets/README/success-mobile.png)
+
+**Lighthouse test - Desktop**
+
+Lighthouse Home Desktop
+
+![Lighthouse Home Desktop](assets/README/index-lighthouse-desktop.png)
+
+Lighthouse Class Desktop
+
+![Lighthouse Class Desktop](assets/README/classes-desktop.png)
+
+Lighthouse Contact Us Desktop
+
+![Lighthouse Contact Us Desktop](assets/README/contact-us-desktop.png)
+
+Lighthouse Success Desktop
+
+![Lighthouse Success Desktop](assets/README/success-desktop.png)
+
+
+*** 
+
+## Deployment 
+
+This project was deployed using the steps below, with the version releasing active. Please do not change files within this repository, as any changes pushed to the main branch will be automatically reflected on the live website. Instead, please follow the second set of steps, which will guide you to forking and cloning the website to make changes without impacting the live website. Thanks!
+
+1. Logged into my [GitHub repository](https://github.com/DaniqueJ-R/Milestone-Project-1)
+2. Click the "Settings" button in the main Repository menu.
+3. Clicked "Pages" from the left-hand side navigation menu.
+4. Within the Source section, click the "Branch" button and change from 'None' to 'Main' in the dropdown menu.
+5. The page automatically refreshed with a URL displayed.
+6. Tested the link by clicking on the URL.
+
+The live website can be found here: https://daniquej-r.github.io/Milestone-Project-1/index.html.
+
+To fork this website to either propose changes or to use it as an idea for another website, follow these steps:
+1. If you haven't yet, you should set up Git. Don't forget to set up authentication to GitHub.com from Git as well.
+1. Navigate to the [Milestone Project 1 GitHub repository](https://github.com/DaniqueJ-R/Milestone-Project-1).
+1. Click the 'Fork' button on the upper right part of the page. It's in between 'Watch' and 'Star'.
+1. You will now have a fork of the OT Yoga repository added to your GitHub profile. Navigate to your profile and find the forked repository to add the required files.
+1. Click the' Code' button Above the list of forked files.
+1. A dropdown menu will appear, providing a choice of cloning options. Select the one that applies to your setup.
+Further details on completing the final step are on the GitHub ['Fork a Repo'](https://docs.github.com/en/get-started/quickstart/fork-a-repo) page.
+
+
+***
+
+## Credit
+
+### People
+
+* Mentor Brian Macharia for guiding and advising throughout the project's lifecycle.
+* Rick Atherton and Ilyascan OIgun are sources of information for README content and layout.
+* Code Institute Slack community for peer reviewing the website.
+
+### Software & Web Applications
+
+* [Balsamiq](https://balsamiq.com/) - Used to build wireframes in the Skelton phase. 
+* This website was coded using HTML, Bootstrap & CCS, with [GitPod](https://gitpod.io/) and [Visual Studio Code](https://code.visualstudio.com/) used for an IDE and [GitHub](https://github.com/) as a hosting repository. 
+* [GitPod](https://gitpod.io/) and [Visual Studio Code](https://code.visualstudio.com/) - for writing the code. Using the command line for committing and pushing to Git Hub
+* [ChatGPT](https://www.w3schools.com/) - Source of 'How to...' information throughout the build.
+* [iiloveimg](www.iloveimg.com) - For compressing images to improve page load time.
+* [Invideo.ai](https://ai.invideo.io/workspaces) - for generation placeholder video on the index page.
+* [Wave](https://wave.webaim.org/) - Accessibility Testing to ensure content is readable for all users.
+* [HTML Validator](https://validator.w3.org/) - For validating the HMTL code, no errors were found.
+* [CSS Validator](https://validator.w3.org/) - For validating CSS code, no errors were found.
+* [Code Beautify](https://codebeautify.org/) - For validating the HTML and CSS code layout.
+
+### Code
+
+* [Love Running](https://github.com/DaniqueJ-R/Love-Running-Template) - for inspiration on the schedule element and text overlay for the hero image and a reference for certain coding aspects throughout the build
+* [Boardwalk Games](https://github.com/DaniqueJ-R/boardwalk-games) - for inspiration on the carousel, booking form, footer, and nav-bar elements, and a reference for certain coding aspects throughout the build
+
+### Content
+
+* [Google fonts](https://fonts.google.com/) - The free family font is used throughout the site for 'Montserrat Alternates' and 'Sofia Sans Semi Condensed'.
+* [Font Awesome](https://fontawesome.com/) - Free social media icons sourced from FA.
+* [Freepik](https://freepik.com) - Source of images for the entire build.
+* [FitLab Studio](https://www.fitlabstudiosja.com/) - inspiration for general layout and social media icons in the nav area, as well as FAQs 
+* [Pole People](https://polepeople.co.uk/) - inspiration for general layout and FAQ's
+
+### Inspiration
+
+* [FitLab Studio](https://www.fitlabstudiosja.com/) - inspiration for general layout and social media icons in the nav area, as well as FAQs 
+* [Pole People](https://polepeople.co.uk/) - inspiration for general layout and FAQ's
+* [Akila Pole Studio](https://www.akilapolestudio.com/)- Source of inspiration on design and features that improve accessibility. 
+* [Diva Flow Pole](https://www.divaflowpole.com/)- Source of inspiration on design and features that improve accessibility. 
+* [Ultimate Pole](https://www.ultimatepole.co.uk/classpacks) - Source of inspiration on design and features that improve accessibility. 
