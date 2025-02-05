@@ -502,7 +502,6 @@ border-radius: 1px;}
 }
 
 @media screen and (min-width: 1024px) {
-    /* increase font size in events table when screen size is large enough */
 
     #booking-form {
       margin: 5% 6%; 
@@ -518,7 +517,21 @@ border-radius: 1px;}
   }
 
   #social-links-nav{
-    padding-left: 444px;
+    padding-left: 49%;
     padding-bottom: 6px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  #social-links-nav{
+    padding-left: 57%;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  #social-links-nav{
+    padding-left: 64%;
+  }
+
 }
