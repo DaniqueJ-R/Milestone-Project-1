@@ -23,32 +23,35 @@ body {
   background-color: var(--background-color);
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-  padding-top: 60px; /*Added for nav bar space to not overlap as it is now fixed top*/
+  padding-top: 60px;
+  /*Added for nav bar space to not overlap as it is now fixed top*/
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family: var(--primary-font);
   color: var(--Nav-color);
 }
 
 .sub-heading {
-color: var(--primary-color);
-padding-top: 25px;
+  color: var(--primary-color);
+  padding-top: 25px;
 }
 
 /*removed padding from phone screen*/
-.row>*{
+.row>* {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-hr{
+hr {
   border: transparent;
   margin: 0%;
 }
 
 /*removed margine from right side of screen. */
-.row{
+.row {
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -59,65 +62,65 @@ hr{
 
 /* Buttons */
 
-.custom-button-filled{
+.custom-button-filled {
   background-color: var(--highlight-color);
   border: 2px solid var(--highlight-color);
   color: var(--Nav-color);
   font-weight: 500;
 }
 
-.custom-button-filled:hover{
+.custom-button-filled:hover {
   background-color: var(--Nav-color);
   border: 2px solid var(--Nav-color);
   color: var(--background-color);
 }
 
-.custom-button-outlined{
+.custom-button-outlined {
   border: 2px solid var(--highlight-color);
   color: var(--highlight-color);
   font-weight: 500;
   padding: 5px 17px;
 }
 
-.custom-button-outlined:hover{
+.custom-button-outlined:hover {
   background-color: var(--highlight-color);
   color: white;
 }
 
 /* Navbar*/
 
-#navbar{
-background-color: var(--Nav-color);
+#navbar {
+  background-color: var(--Nav-color);
 }
 
-#navbar .dropdown-menu{
+#navbar .dropdown-menu {
   background-color: var(--Nav-color);
-  }
+}
 
-#navbar .logo{
+#navbar .logo {
   font-family: var(--logo-font);
   font-size: 145%;
   margin: 0 0.5rem;
 }
 
-#navbar .custom-button-outlined{
+#navbar .custom-button-outlined {
   border: 2px solid var(--background-color);
   color: var(--background-color);
   font-weight: 600;
   padding: 5px 17px;
 }
 
-#navbar .custom-button-outlined:hover{
+#navbar .custom-button-outlined:hover {
   background-color: var(--background-color);
   color: white;
 }
 
-#social-links-nav i{
+#social-links-nav i {
   margin-top: 0.68rem;
   /* Margin brings icons closer together to offset the padding*/
   margin-left: -3px;
   color: white;
-    /* Padding brings icons away from divider line*/
+  /* Padding brings icons away from divider line*/
   padding-right: 10px;
 }
 
@@ -129,17 +132,18 @@ background-color: var(--Nav-color);
 /* Index Page */
 /* Heading index */
 
-#hero{
+#hero {
   transition: transform 2s ease, opacity .5s ease-out;
   width: 100%;
 }
 
 #hero .carousel-item img {
-  object-fit: cover; /* Ensures images don't stretch weirdly */
+  object-fit: cover;
+  /* Ensures images don't stretch weirdly */
   height: 500px;
 }
 
-#hero .logo{
+#hero .logo {
   font-family: var(--logo-font);
   font-size: 60px;
   margin: 7px;
@@ -157,72 +161,82 @@ header.container {
 /* Ensure the images take up the full width and height of the carousel */
 #hero img {
   width: 100%;
-  height: auto; /* Maintains aspect ratio */
+  height: auto;
+  /* Maintains aspect ratio */
 }
 
 /* Make the carousel caption cover the entire photo */
 .carousel-caption {
-  position: absolute; /* Overlay on the image */
+  position: absolute;
+  /* Overlay on the image */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Covers the full height of the carousel item */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-} /*End of Chat GPT code*/
+  height: 100%;
+  /* Covers the full height of the carousel item */
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+}
 
-.carousel-caption h1{
+/*End of Chat GPT code*/
+
+.carousel-caption h1 {
   bottom: 0;
 }
 
 /* Optional: Logo adjustments */
 h1.logo {
-  font-size: 3rem; /* Adjust font size */
+  font-size: 3rem;
+  /* Adjust font size */
   color: #fff;
 }
 
 /*Newsletter*/
 
-#newsletter{
+#newsletter {
   padding: 20px 25px;
 }
+
 /* Button for newsletter*/
-#newsletter .custom-button-filled{
+#newsletter .custom-button-filled {
   margin-top: 20px;
 }
 
 
 /* Newsletter popup*/
-#newsletter-model{
+#newsletter-model {
   padding: 0px 10px;
   text-align: center;
 }
 
-#newsletter-model button{
+#newsletter-model button {
   margin: 11px 14px;
   text-align: center;
 }
 
-.modal-footer .custom-button-outlined{
+.modal-footer .custom-button-outlined {
   background-color: #fff;
 }
-.modal-footer .custom-button-outlined:hover{
+
+.modal-footer .custom-button-outlined:hover {
   border-color: var(--highlight-color);
 }
 
 .modal-footer div {
-  margin-right: 65px;}
+  margin-right: 65px;
+}
 
 
 
 /*About us*/
 
-#about-us{
+#about-us {
   padding: 20px 25px;
 }
 
 /*Pricing and Scheduling */
 
-#price-sched{
+#price-sched {
   padding: 22px 6px;
 }
 
@@ -231,23 +245,23 @@ h1.logo {
 }
 
 .table>:not(caption)>*>* {
-background-color: transparent;
-border-color: var(--Nav-color);
+  background-color: transparent;
+  border-color: var(--Nav-color);
 }
 
 /* testemonies */
 
-#testemonies{
+#testemonies {
   padding: 4px 25px;
   min-height: 455px;
 }
 
-#testemonies p{
+#testemonies p {
   padding: 23px 25px;
 
 }
 
-#testemonies h3{
+#testemonies h3 {
   margin-bottom: -0.5rem;
 }
 
@@ -266,12 +280,12 @@ video {
 /*Classes page*/
 
 /* Classes section */
-#classes{
+#classes {
   padding: 2rem;
   max-width: 1000px;
 }
 
-#classes .card{
+#classes .card {
   margin-bottom: 1.5rem;
   border-color: var(--secondary-color);
   --bs-card-bg: transparent;
@@ -279,8 +293,9 @@ video {
   color: var(--primary-color);
 }
 
-#classes .card>*{
-border-radius: 1px;}
+#classes .card>* {
+  border-radius: 1px;
+}
 
 /* Times Section */
 #times {
@@ -310,14 +325,15 @@ border-radius: 1px;}
   font-weight: 700;
   font-size: 2rem;
 }
+
 /* Disount line */
 
-#discount{
+#discount {
   display: flex;
   justify-content: end;
 }
 
-#discount p{
+#discount p {
   background-color: var(--highlight-color);
   color: var(--Nav-color);
   padding: 5px 10px;
@@ -326,37 +342,37 @@ border-radius: 1px;}
   font-size: 0.8rem;
   display: block;
   margin: auto;
-  }
+}
 
 /* Contact us page*/
 
 /*FAQs*/
 
-#faq-header{
+#faq-header {
   padding-top: 25px;
 }
 
-.faq-section-heading{
+.faq-section-heading {
   padding-bottom: 2px;
 }
 
-#faq{
+#faq {
   padding: 20px 25px;
 
 }
 
-#faq .accordion>*{
+#faq .accordion>* {
   --bs-accordion-color: var(--primary-color);
   --bs-accordion-bg: var(--background-color);
   border: 0px;
-} 
+}
 
-#faq .accordion-button{
+#faq .accordion-button {
   background-color: var(--Nav-color);
   color: var(--background-color);
 }
 
-#faq .accordion-button:not(.collapsed){
+#faq .accordion-button:not(.collapsed) {
   background-color: var(--highlight-color);
   color: var(--Nav-color);
 }
@@ -368,8 +384,8 @@ border-radius: 1px;}
 }
 
 #booking-form h2 {
- margin-bottom: 1rem;
-} 
+  margin-bottom: 1rem;
+}
 
 #booking-form .row>* {
   padding-right: calc(var(--bs-gutter-x)* .5);
@@ -396,23 +412,24 @@ border-radius: 1px;}
   color: #fff;
 }
 
-#footer h2, #footer h3{
+#footer h2,
+#footer h3 {
   color: #fff;
   padding-top: 25px;
 }
 
-#footer i{
+#footer i {
   color: #fff;
   margin-right: 7px;
   font-size: 1.2rem;
 }
 
-.social-links-footer i{
+.social-links-footer i {
   color: #fff;
   padding-right: 7px;
 }
 
-#footer .social-links-footer i{
+#footer .social-links-footer i {
   color: white;
   font-size: 1.9rem;
   -webkit-transition: color 0.2s ease-in-out;
@@ -420,11 +437,11 @@ border-radius: 1px;}
   transition: color 0.2s ease-in-out;
 }
 
-#footer .social-links-footer i:hover{
+#footer .social-links-footer i:hover {
   color: var(--background-color);
 }
 
-#footer .table-dark *{
+#footer .table-dark * {
   background-color: transparent;
 }
 
@@ -432,7 +449,7 @@ border-radius: 1px;}
   font-size: 1rem;
 }
 
-#footer iframe{
+#footer iframe {
   height: 200px;
   width: 100%;
   padding-top: 15px;
@@ -443,34 +460,35 @@ border-radius: 1px;}
 
 /* Small screens and up (Added by source)*/
 @media screen and (min-width: 576px) {
+
   /* increase font size in events table when screen size is large enough */
   #footer table {
     font-size: 1rem;
-}
+  }
 
   .student-discount {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
-  #newsletter{
+  #newsletter {
     padding: 20px 31px;
   }
-  
-  #about-us{
+
+  #about-us {
     padding: 20px 13px;
   }
 
-  #newsletter-model{
+  #newsletter-model {
     padding: 0px 10px;
     text-align: left;
   }
 
-  #newsletter-model button{
+  #newsletter-model button {
     margin: 5px;
     text-align: center;
   }
 
-  .modal-footer div{
+  .modal-footer div {
     margin-right: 75px;
   }
 
@@ -481,15 +499,16 @@ border-radius: 1px;}
   #booking-form {
     border: 2px solid var(--secondary-color);
     padding: 3% 0%;
-    margin: 5% 3%; 
+    margin: 5% 3%;
   }
-  #classes{
+
+  #classes {
     padding: 1rem;
 
   }
 
-  #testemonies{
-     min-height: 390px;
+  #testemonies {
+    min-height: 390px;
   }
 
   video {
@@ -498,40 +517,22 @@ border-radius: 1px;}
     max-width: 430px;
     margin: 4rem 0.5rem;
   }
-  
+
 }
 
 @media screen and (min-width: 1024px) {
 
-    #booking-form {
-      margin: 5% 6%; 
-    }
-
-    #testemonies{
-      min-height: 290px;
-   }
-
-   video {
-   max-width: 474px;
-   margin: 30px 1.5rem;
+  #booking-form {
+    margin: 5% 6%;
   }
 
-  #social-links-nav{
-    padding-left: 49%;
-    padding-bottom: 6px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #social-links-nav{
-    padding-left: 57%;
+  #testemonies {
+    min-height: 290px;
   }
 
-}
-
-@media screen and (min-width: 1400px) {
-  #social-links-nav{
-    padding-left: 64%;
+  video {
+    max-width: 474px;
+    margin: 30px 1.5rem;
   }
 
 }

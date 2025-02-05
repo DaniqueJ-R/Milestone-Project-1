@@ -31,24 +31,26 @@
                 <a class="navbar-brand logo" href="index.html">Zenair</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <div id="social-links-nav">
-                        <a href="https://www.facebook.com/" target="_blank"
-                            aria-label="Visit us on Facebook.(Opens in new tab)" rel="noopener"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.twitter.com/" target="_blank"
-                            aria-label="Visit us on Twitter.(Opens in new tab)" rel="noopener"><i
-                                class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"
-                            aria-label="Visit us on Instagram.(Opens in new tab)" rel="noopener"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <div class="vr"></div> <!-- This is devider for media and -->
-                    </div>
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <div id="social-links-nav">
+                                <a href="https://www.facebook.com/" target="_blank"
+                                    aria-label="Visit us on Facebook.(Opens in new tab)" rel="noopener"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.twitter.com/" target="_blank"
+                                    aria-label="Visit us on Twitter.(Opens in new tab)" rel="noopener"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"
+                                    aria-label="Visit us on Instagram.(Opens in new tab)" rel="noopener"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <div class="vr"></div> <!-- This is devider for media and -->
+                            </div>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle" aria-current="page" href="index.html"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
@@ -391,7 +393,9 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <div><input type="checkbox" name="SMS" value="yes" checked> Send SMS</div>
+                                <div><input type="checkbox" name="sms" id="sms" value="yes" checked>
+                                    <label for="sms" class="form-label">Send SMS</label>
+                                </div>
                                 <button type="button" class="btn btn-secondary custom-button-outlined"
                                     data-bs-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-primary custom-button-filled">Sign up!</button>
