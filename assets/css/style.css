@@ -20,6 +20,8 @@
 
 /* Global styles */
 body {
+  max-width: 2000px;
+  margin: 0px auto;
   background-color: var(--background-color);
   font-family: var(--secondary-font);
   color: var(--secondary-color);
@@ -91,6 +93,8 @@ hr {
 
 #navbar {
   background-color: var(--Nav-color);
+  max-width: 2000px;
+  margin: 0px auto;
 }
 
 #navbar .dropdown-menu {
@@ -299,7 +303,7 @@ video {
 
 /* Times Section */
 #times {
-  background: url("../images/timeline-photo-for-schedule.jpg") no-repeat center/cover;
+  background: url("../images/timeline-photo-for-schedule.webp") no-repeat center/cover;
   /*makes background responsive without needing media query*/
   display: flex;
   flex-wrap: wrap;
