@@ -62,7 +62,7 @@ hr{
 .custom-button-filled{
   background-color: var(--highlight-color);
   border: 2px solid var(--highlight-color);
-  color: var(--primary-color);
+  color: var(--Nav-color);
   font-weight: 500;
 }
 
@@ -319,7 +319,7 @@ border-radius: 1px;}
 
 #discount p{
   background-color: var(--highlight-color);
-  color: white;
+  color: var(--Nav-color);
   padding: 5px 10px;
   max-width: 300px;
   /*Addded from source code*/
@@ -501,7 +501,7 @@ border-radius: 1px;}
   
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     /* increase font size in events table when screen size is large enough */
 
     #booking-form {
@@ -511,23 +511,14 @@ border-radius: 1px;}
     #testemonies{
       min-height: 290px;
    }
+
    video {
    max-width: 474px;
-   margin: 30px 5.5rem;
+   margin: 30px 1.5rem;
+  }
+
+  #social-links-nav{
+    padding-left: 444px;
+    padding-bottom: 6px;
   }
 }
-
-/* grid visualisation CSS for testing DELETE AFTER! 
-
-.container,
-.row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
- */
-
-    
