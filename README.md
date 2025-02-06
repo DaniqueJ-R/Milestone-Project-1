@@ -25,6 +25,7 @@ The Zenair Wellness Center is a service that provides structured and fun fitness
  * [Surface](#Surface)
 * [Features](#features)
 * [Testing](#testing)
+* [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credit)
 
@@ -399,8 +400,40 @@ Lighthouse Success Desktop
 
 ![Lighthouse Success Desktop](assets/README/success-desktop.png)
 
+## Bugs
 
-### Known Bugs
+### Bug Fixes/ General Improvements 
+
+* **Setting Body to 2000px and resizing photos** — The Lighthouse results initially for the Index and Classes page indicated that the photos were too large for the page, leading to longer loading times and a poor user experience. 
+
+     - __Fix:__  When I Showed this to my mentor, his solution was to set a max width of 2000px for the Body of the page, resize the photos to 2000px max, and change them to .webp instead of .jpg. This resulted in the pages getting the results from Lighthouse mentioned below
+
+* **Nav-Menu dropdown appearing on Left side of screen** — When I first added the Nav Menu, the drop-down section was not correctly positioned, causing it to show on the left side of the page instead of under the heading it was created for. 
+
+     - __Fix:__ To fix this, I went through each line and noticed that the area was not within the correct area, then I reinstalled the code for the dropdown and nav-menu, which now shows the dropdown under the correct area after testing. 
+
+* **Resizing Pricing Table font to remove overhanding** - After adding the correct information to the pricing table on the Homepage, I noticed it will overflow on the page when in smaller devices. 
+
+     - __Fix:__ To combat this, I used a Media Query and changed the font, making it that it was 0.8rem on small decided, and increases to 1.3?rem on larger devices. 
+
+* **Using bootstrap arrangement for spacing and location of classes section** - During the sizing and styling of the Class section, there was an issue with the spacing, where the Zumba class would not be aligned Center and the other classes would not align left or right respectively. 
+
+     - __Fix:__ I referenced the Boardwalk Games coding and Bootstraps Documents, realizing the Row and containing classes were not in the correct place, and the column sizes were incorrect. In correcting this, The X formation was possible, allowing it to form in a single line on Mobile devices and in the X formation on Desktop and tablets. This looks different from the Wireframes as it was agreed this styling was preferred to the original.  
+
+* **Sizing carousel on home page** - When initally adding the carousel, it only covered a part of the header section. Per the wireframe, this was to spread across the entire page which bootstrap did not have any direct classes for. 
+
+     - __Fix:__ Fixing this took some time due to spacing. Ultimatly it was fixed after finding online code with CSS that assisted with the sizing and location of the photots. 
+
+* **Reconnecting Accordion on FAQ not to open together** - Once working on the FAQ section, there were dificulties getting the colours to show correctly as the bootstraps classes catered to the same thing in different areas, as well as a problem where, as the Accordion was duplicated, both sections were opening simultaniously. 
+
+     - __Fix:__ The fix was to overwrite the colour classes in Accordion library, allowing me to customize them in the uniformed colour pallet. To prevent the tabs from opening together, I had to change the data-bs-target, aria-controls, data-bs-parent and ID, making them unique to each tab, preventing any further bugs. 
+
+* **Spacing and sizing of Social media icons** - Upon first adding the Social Icons in the Nav-Menu, it was first taken added to the list area, which worked visually, but was shown to not to be allowed in the coding rules, pointed out by the HTML Verification check.  
+
+     - __Fix:__ Initally it was taken from the list codes, and was showing beside the logo incorrectly. I then tried adding padding or the flex display CSS, however it was not responisive on all screen sizes. Ultimatly I was able to add it as a list item, that was able to keep the icons in the correct area, and now being verified by the HTML Verification check. 
+
+
+### Remaining Bugs
 
 There are still minor issues on the site that can be a slightly unfavourable experience on the project for tablet and mobile users, where the nav-menu does not automatically collapse after using the dropdown for each second. The nav-menu has to be closed manually to see the page, however, they are taken to the correct location on each page.
 
@@ -423,11 +456,11 @@ The live website can be found here: https://daniquej-r.github.io/Milestone-Proje
 
 To fork this website to either propose changes or to use it as an idea for another website, follow these steps:
 1. If you haven't yet, you should set up Git. Don't forget to set up authentication to GitHub.com from Git as well.
-1. Navigate to the [Milestone Project 1 GitHub repository](https://github.com/DaniqueJ-R/Milestone-Project-1).
-1. Click the 'Fork' button on the upper right part of the page. It's in between 'Watch' and 'Star'.
-1. You will now have a fork of the OT Yoga repository added to your GitHub profile. Navigate to your profile and find the forked repository to add the required files.
-1. Click the' Code' button Above the list of forked files.
-1. A dropdown menu will appear, providing a choice of cloning options. Select the one that applies to your setup.
+2. Navigate to the [Milestone Project 1 GitHub repository](https://github.com/DaniqueJ-R/Milestone-Project-1).
+3. Click the 'Fork' button on the upper right part of the page. It's in between 'Watch' and 'Star'.
+4. You will now have a fork of the Milestone Project 1 repository added to your GitHub profile. Navigate to your profile and find the forked repository to add the required files.
+5. Click the' Code' button Above the list of forked files.
+6. A dropdown menu will appear, providing a choice of cloning options. Select the one that applies to your setup.
 Further details on completing the final step are on the GitHub ['Fork a Repo'](https://docs.github.com/en/get-started/quickstart/fork-a-repo) page.
 
 
@@ -444,10 +477,11 @@ Further details on completing the final step are on the GitHub ['Fork a Repo'](h
 ### Software & Web Applications
 
 * [Balsamiq](https://balsamiq.com/) - Used to build wireframes in the Skelton phase. 
-* This website was coded using HTML, Bootstrap & CCS, with [GitPod](https://gitpod.io/) and [Visual Studio Code](https://code.visualstudio.com/) used for an IDE and [GitHub](https://github.com/) as a hosting repository. 
-* [GitPod](https://gitpod.io/) and [Visual Studio Code](https://code.visualstudio.com/) - for writing the code. Using the command line for committing and pushing to Git Hub
-* [ChatGPT](https://www.w3schools.com/) - Source of 'How to...' information throughout the build.
-* [iiloveimg](www.iloveimg.com) - For compressing images to improve page load time.
+* [GitHub](https://github.com/) - As a hosting repository for the deployment site. 
+* [GitPod](https://gitpod.io/) and [Visual Studio Code](https://code.visualstudio.com/) - for writing the code. Using the command line for committing and pushing to Git Hub.  website was coded using HTML, Bootstrap & CCS, with used for an IDE.
+* [W3schools](https://www.w3schools.com/) - Source of 'How to...' information throughout the build.
+* [Stackoverflow](https://stackoverflow.com/) - Source of 'How to...' information throughout the build.
+* [iloveimg](www.iloveimg.com) - For compressing images to improve page load time.
 * [Invideo.ai](https://ai.invideo.io/workspaces) - for generation placeholder video on the index page.
 * [Wave](https://wave.webaim.org/) - Accessibility Testing to ensure content is readable for all users.
 * [HTML Validator](https://validator.w3.org/) - For validating the HMTL code, no errors were found.
@@ -458,6 +492,8 @@ Further details on completing the final step are on the GitHub ['Fork a Repo'](h
 
 * [Love Running](https://github.com/DaniqueJ-R/Love-Running-Template) - for inspiration on the schedule element and text overlay for the hero image and a reference for certain coding aspects throughout the build
 * [Boardwalk Games](https://github.com/DaniqueJ-R/boardwalk-games) - for inspiration on the carousel, booking form, footer, and nav-bar elements, and a reference for certain coding aspects throughout the build
+* [CodePen](https://codepen.io/Washable/pen/Oxqjbq) - Fot text only carousel for testemonies.
+* [stackoverflow](https://stackoverflow.com/questions/33642916/how-do-i-make-my-bootstrap-carousel-the-full-width-of-the-page) - For header carousel to cover screen with overlay
 
 ### Content
 

@@ -155,20 +155,13 @@ a {
   font-size: 60px;
   margin: 7px;
   padding-top: 320px;
+  color: #fff;
 }
 
-/*Chat GPT code*/
-/* Override Bootstrap's container to remove width restrictions */
+/* Override Bootstrap container to remove width restrictions */
 header.container {
   max-width: 100%;
   padding: 0;
-}
-
-/* Ensure the images take up the full width and height of the carousel */
-#hero img {
-  width: 100%;
-  height: auto;
-  /* Maintains aspect ratio */
 }
 
 /* Make the carousel caption cover the entire photo */
@@ -177,24 +170,11 @@ header.container {
   /* Overlay on the image */
   top: 0;
   left: 0;
+  /* Covers the full height and width of the carousel item */
   width: 100%;
   height: 100%;
-  /* Covers the full height of the carousel item */
+  /* Final rgba value sets the opacity so it is semi-transparent */
   background: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent background */
-}
-
-/*End of Chat GPT code*/
-
-.carousel-caption h1 {
-  bottom: 0;
-}
-
-/* Optional: Logo adjustments */
-h1.logo {
-  font-size: 3rem;
-  /* Adjust font size */
-  color: #fff;
 }
 
 /*Newsletter*/
