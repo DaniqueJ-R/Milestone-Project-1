@@ -255,10 +255,6 @@ To deliver the strategic aim of "Introduce alternative methods of health and wel
 
 Throughout the Build phase, Chrome Developer Tools are used to ensure all pages are developed to remain intuitive, responsive, and accessible across all device widths. The pages were designed at 1400px wide, reducing to 320px for mobile devices. These tools and others were used for the Testing phase. 
 
-There are still minor issues on the site that can be a slightly unfavourable experience on the project for tablet and mobile users, where the nav-menu does not automatically collapse after using the dropdown for each second. The nav-menu has to be closed manually to see the page, however, they are taken to the correct location on each page.
-
-![Nav-menu area not colappsing after selecting dropdown option](assets/README/nav-bar-issue.png)
-
 The following sections summarise the tests and results.
 
 ### Code
@@ -269,7 +265,14 @@ Code has been tested using the [HTML Validator](https://validator.w3.org/) and [
 * **classes.html** - 0 Errors / 0 Warnings
 * **contact-us.html** - 0 Errors / 0 Warnings
 * **success.html** - 0 Errors / 0 Warnings
-* **style.css** - 0 Errors / 1 Warning '::-webkit-details-marker is a vendor extended pseudo-element' - expected from using the Vertical Accordion from CodePen. CSS code is required for the functionality of the Vertical Accordion and, therefore, will remain a known exception.
+* **style.css** - 0 Errors / 20 warnings
+
+![CSS No errors](assets/README/css-no-error.png)
+
+![CSS warnings](assets/README/css-warnings.png)
+
+The warnings are due to 1) import of the Google fonts, 2) a webkit extension for Safari support of the flip-card effect used on the home page, and  3) using the root format for most colouring on the site (--var).
+
 
 ### Browser
 
@@ -324,6 +327,38 @@ Each page of this website has been tested with [Wave (Web Accessibility Evaluati
 
 * **Skipped heading level** The class titles' heading level is skipped on the classes page. This was fixed by changing them to H£ tags instead of h5, and the above were already H2 tags. 
 
+### User Stories
+
+The leading user stories have been tested to ensure the priority aims of the website have been delivered. 
+Below is a summary of the test results.
+
+* As a potential gym member, I need easy navigation and a user-friendly design, including a responsive layout for my device to find information quickly and efficiently without frustration.
+    * All pages score a consistent 100% when tested for Accessibility with Lighthouse. In addition to no errors being found when tested with [Wave (Web Accessibility Evaluation Tool)](https://wave.webaim.org/). This would suggest the site can be navigated by those with accessibility requirements and/or using a screen reader with ease.
+
+* As a Prospective Customer, I need to find essential information such as location, contact details, and opening hours clearly and concisely so I can easily plan my visit or contact the gym.
+    * The homepage offers this key information within the homepage, and is all easy to locate within the page. Furthermore the studio address, number, email, opening hours and a map of the location are consistently displayed in the Footer on all pages.  
+
+* As a potential member, I want to explore a selection of different classes on the website to discover other services and decide which ones I might be interested in trying.
+    * From either clicking to the 'Classs' page or scrolling on the Home page, users can access informaiton regading the classes offered, price per class, and the schedule for each class easily on the pages. 
+
+* As an active gym member, I need to see the class schedules with the time and date for each weekly class to get there on time and fit into my schedule.
+    * This information is clearly displayed on the Classes page with the nav-menu having a link directly to that section for easy viewing. This also infomres who will be the instructor for each class in an easy to read responsive visual grid, making it easy to see the date, time and class you desire. 
+
+* As a potential gym member, I need high-definition photos and videos clearly showing life at the wellness centre and what classes generally entail. 
+    * High defenition photos and videos were sourced using sites like Freepik, all cohesive and responsive for all devices and the overall design of the colour scheme of the site. Photos is accessable to screeneaders or if the link is broken with a small description of each photo added. 
+
+* As a potential gym member, I need an easy way to contact the gym from the website for inquiries regarding bookings, cancellations, and general inquiries 
+    * A booking form was implimented on the Contact us screen, allowing members to book classes, rent equiptment, cancel classes and more. This was created with the requrment of all lines to be filled, andmembers are unable to proceed with sending the inquiry until they are filled. 
+    
+* As a potential member, I want a section where I can easily find the answers to questions I may have about classes and expectations before I make a decision 
+    * On the Contact us Page, a FAQ section was added with 9 commonly asked questions, easily accessable from the Nav-menu. On the Contact us page, the nav-menu has two headings taking you to the respective FAQ sections for easy navegation. 
+
+* As a Regular Customer, I want to sign up for newsletters and updates to stay informed about special offers, new games, and upcoming events. 
+    * A breif descrition of the company and its goals followed by a sign up button is located at the top of the Home page, and beside the About us section on Tablets and bigger sized devices. The button leads to a pop-up requesting the name and phone number, with a check box for users to request SMS promo messages as well as the emails. Once done, they are lead back to the index page to continue browsing. 
+    
+* As a potential member, I want to see other members' experiences and testimonials so I can feel more comfortable about what to expect 
+    * At the end of the Home page, a section showcases testimonials from past and current members, highlighting their experiences over time. This helps new visitors gain insight into the supportive and welcoming environment at Zenair Wellness Center. 
+
 ### Performance
 
 Using Lighthouse performance testing within Chrome Developer Tools, every page's performance was tested on desktop and mobile devices. The results from this testing are outlined in the tables below. The tests highlighted a constant theme of image sizes being too large and elements such as bootstraps and Google fonts causing a longer loading time for users. All files have been appropriately right-sized and formatted to improve the user experience, and we will continue to work on these elements to reduce the loading time. In the meantime, the "class="d-block w-100" was removed from the carousel images as suggested by Lighthouse. 
@@ -365,6 +400,12 @@ Lighthouse Success Desktop
 ![Lighthouse Success Desktop](assets/README/success-desktop.png)
 
 
+### Known Bugs
+
+There are still minor issues on the site that can be a slightly unfavourable experience on the project for tablet and mobile users, where the nav-menu does not automatically collapse after using the dropdown for each second. The nav-menu has to be closed manually to see the page, however, they are taken to the correct location on each page.
+
+![Nav-menu area not colappsing after selecting dropdown option](assets/README/nav-bar-issue.png)
+
 *** 
 
 ## Deployment 
@@ -397,7 +438,7 @@ Further details on completing the final step are on the GitHub ['Fork a Repo'](h
 ### People
 
 * Mentor Brian Macharia for guiding and advising throughout the project's lifecycle.
-* Rick Atherton and Ilyascan OIgun are sources of information for README content and layout.
+* Rick Atherton, Elaine Broche and Ilyascan OIgun are sources of information for README content and layout.
 * Code Institute Slack community for peer reviewing the website.
 
 ### Software & Web Applications
