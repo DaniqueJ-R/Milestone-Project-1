@@ -18,11 +18,11 @@ The Zenair Wellness Center is a service that provides structured and fun fitness
 ## Index – Table of Contents
 
 * [User Experience R&D](#user-experience-research-and-design)
- * [Strategy](#Strategy)
- * [Scope](#Scope)
- * [Structure](#Structure)
- * [Skeleton](#Skeleton)
- * [Surface](#Surface)
+ * [Strategy](#Strategy)
+ * [Scope](#Scope)
+ * [Structure](#Structure)
+ * [Skeleton](#Skeleton)
+ * [Surface](#Surface)
 * [Features](#features)
 * [Testing](#testing)
 * [Bugs](#bugs)
@@ -35,7 +35,7 @@ The Zenair Wellness Center is a service that provides structured and fun fitness
 
 ### Strategy
 
-This website is targeted at active members and potential members of Zenair Wellness Center, so specific information such as pricing, location, and information on the classes offered are the main aspects of the design for this website. The website should inform users of pricing, discounts, schedule, location, contact information, and opening hours. There is a form to make booking a class or sending any inquiry to the studio easier to ensure more clients.
+This website is targeted at active members and potential members of Zenair Wellness Center, so specific information such as pricing, location, and classes offered are the main aspects of the design for this website. The website should inform users of pricing, discounts, schedule, location, contact information, and opening hours. There is a form to make booking a class or sending any inquiry to the studio easier to ensure more clients.
 
 #### Leading User Stories
 
@@ -88,16 +88,16 @@ Please see the features below:
 * Imagery from classes to help convey the aim of the website and individual pages.
 
 * Provide information on; 
- * Each class offered and a description of each class
- * The schedule and instructor for each class,
- * The location and contact information,
- * The pricing and any discounts available for each class
- * A booking form for classes
- * A section with commonly asked questions
- * Testimonies from previous and current members,
- * Allow users to stay informed of changes and discounts using a newsletter.
- * A carousal of images as the Hero images 
- * Easy navigation from page to page and social media 
+ * Each class offered and a description of each class
+ * The schedule and instructor for each class,
+ * The location and contact information,
+ * The pricing and any discounts available for each class
+ * A booking form for classes
+ * A section with commonly asked questions
+ * Testimonies from previous and current members,
+ * Allow users to stay informed of changes and discounts using a newsletter.
+ * A carousal of images as the Hero images 
+ * Easy navigation from page to page and social media 
 
 #### Out-of-Scope Features
 
@@ -140,12 +140,12 @@ Retaining a clean and straightforward design throughout all pages is crucial to 
 
 The homepage will be the hub of the website, where essential information and the initial call to action are displayed. To support the users' journey, there is a logical navigation menu that progressively reveals information in the order the user expects;
 
- * Want the general information on classes offered? Click the dropdown from 'Home to Pricing'.
- * Want to know previous members' experience? Click the dropdown from 'Home to Testimonies'.
- * Want more information on the classes we offer? Click 'Classes'.
- * Want more information on the class schedule? Click 'Classes to Schedule'.
- * Have further questions on classes offered? Click 'Contact us'.
- * Want to book a class? Click the call to action button on all pages, 'Book a Class'.
+ * Want the general information on classes offered? Click the dropdown from 'Home to Pricing'.
+ * Want to know previous members' experience? Click the dropdown from 'Home to Testimonies'.
+ * Want more information on the classes we offer? Click 'Classes'.
+ * Want more information on the class schedule? Click 'Classes to Schedule'.
+ * Have further questions on classes offered? Click 'Contact us'.
+ * Want to book a class? Click the call to action button on all pages, 'Book a Class'.
 
 I designed detailed wireframes for this project to bring my vision for the site to life. Check out the links below to explore the mobile, tablet, and desktop mockups: [Balsamiq](https://balsamiq.com/wireframes/) (see samples below—all wireframes can be found within the [Repo](wireframes)).
 
@@ -222,8 +222,8 @@ The footer has been divided into three sections: the left side contains contact 
 ##### Metadata
 
 To support the following strategic aims;
- * Advertise fitness classes for the betterment of self in your fitness or healing journey.
- * Advertise fitness classes to increase revenue and fund the cost of the instructors and overall studio maintenance. 
+ * Advertise fitness classes for the betterment of self in your fitness or healing journey.
+ * Advertise fitness classes to increase revenue and fund the cost of the instructors and overall studio maintenance. 
 Meta data has been included within the website's HTML head element to increase the traffic to this website. Furthermore, the individual site pages have been titled appropriately as another method of informing users where they have navigated.
 
 ##### Redirection
@@ -272,7 +272,7 @@ Code has been tested using the [HTML Validator](https://validator.w3.org/) and [
 
 ![CSS warnings](assets/README/css-warnings.png)
 
-The warnings are due to 1) import of the Google fonts, 2) a webkit extension for Safari support of the flip-card effect used on the home page, and  3) using the root format for most colouring on the site (--var).
+The warnings are due to 1) import of the Google fonts, 2) a webkit extension for Safari support of the flip-card effect used on the home page, and  3) using the root format for most colouring on the site (--var).
 
 
 ### Browser
@@ -334,31 +334,31 @@ The leading user stories have been tested to ensure the priority aims of the web
 Below is a summary of the test results.
 
 * As a potential gym member, I need easy navigation and a user-friendly design, including a responsive layout for my device to find information quickly and efficiently without frustration.
-    * All pages score a consistent 100% when tested for Accessibility with Lighthouse. In addition to no errors being found when tested with [Wave (Web Accessibility Evaluation Tool)](https://wave.webaim.org/). This would suggest the site can be navigated by those with accessibility requirements and/or using a screen reader with ease.
+    * All pages score a consistent 100% when tested for Accessibility with Lighthouse. In addition, no errors were found when tested with [Wave (Web Accessibility Evaluation Tool)](https://wave.webaim.org/). This would suggest the site can be navigated by those with accessibility requirements and/or using a screen reader with ease.
 
 * As a Prospective Customer, I need to find essential information such as location, contact details, and opening hours clearly and concisely so I can easily plan my visit or contact the gym.
-    * The homepage offers this key information within the homepage, and is all easy to locate within the page. Furthermore the studio address, number, email, opening hours and a map of the location are consistently displayed in the Footer on all pages.  
+    * The homepage offers this key information within the homepage and is all easy to locate within the page. Furthermore, the studio address, number, email, opening hours and a map of the location are consistently displayed in the Footer on all pages.  
 
 * As a potential member, I want to explore a selection of different classes on the website to discover other services and decide which ones I might be interested in trying.
-    * From either clicking to the 'Classs' page or scrolling on the Home page, users can access informaiton regading the classes offered, price per class, and the schedule for each class easily on the pages. 
+    * From either clicking to the 'Class' page or scrolling on the Home page, users can access information regarding the classes offered, price per class, and the schedule for each class easily on the pages. 
 
 * As an active gym member, I need to see the class schedules with the time and date for each weekly class to get there on time and fit into my schedule.
-    * This information is clearly displayed on the Classes page with the nav-menu having a link directly to that section for easy viewing. This also infomres who will be the instructor for each class in an easy to read responsive visual grid, making it easy to see the date, time and class you desire. 
+    * This information is clearly displayed on the Classes page with the nav-menu having a link directly to that section for easy viewing. This also informs who will be the instructor for each class in an easy-to-read responsive visual grid, making it easy to see the date, time and class you desire. 
 
 * As a potential gym member, I need high-definition photos and videos clearly showing life at the wellness centre and what classes generally entail. 
-    * High defenition photos and videos were sourced using sites like Freepik, all cohesive and responsive for all devices and the overall design of the colour scheme of the site. Photos is accessable to screeneaders or if the link is broken with a small description of each photo added. 
+    * High-definition photos and videos were sourced using sites like Freepik, all cohesive and responsive for all devices and the overall design of the colour scheme of the site. Photos are accessible to screenreaders or if the link is broken with a small description of each photo added. 
 
 * As a potential gym member, I need an easy way to contact the gym from the website for inquiries regarding bookings, cancellations, and general inquiries 
-    * A booking form was implimented on the Contact us screen, allowing members to book classes, rent equiptment, cancel classes and more. This was created with the requrment of all lines to be filled, andmembers are unable to proceed with sending the inquiry until they are filled. 
-    
+    * A booking form was implemented on the Contact Us screen, allowing members to book classes, rent equipment, cancel classes and more. This was created with the requirement of all lines to be filled, and members are unable to proceed with sending the inquiry until they are filled. 
+    
 * As a potential member, I want a section where I can easily find the answers to questions I may have about classes and expectations before I make a decision 
-    * On the Contact us Page, a FAQ section was added with 9 commonly asked questions, easily accessable from the Nav-menu. On the Contact us page, the nav-menu has two headings taking you to the respective FAQ sections for easy navegation. 
+    * On the Contact Us page, a FAQ section was added with 9 commonly asked questions, easily accessible from the nav-menu. On the Contact Us page, the nav-menu has two headings taking you to the respective FAQ sections for easy navigation. 
 
 * As a Regular Customer, I want to sign up for newsletters and updates to stay informed about special offers, new games, and upcoming events. 
-    * A breif descrition of the company and its goals followed by a sign up button is located at the top of the Home page, and beside the About us section on Tablets and bigger sized devices. The button leads to a pop-up requesting the name and phone number, with a check box for users to request SMS promo messages as well as the emails. Once done, they are lead back to the index page to continue browsing. 
-    
+    * A brief description of the company and its goals, followed by a sign-up button, is located at the top of the Home page and beside the About Us section on Tablets and bigger-sized devices. The button leads to a pop-up requesting the name and phone number, with a check box for users to request SMS promo messages as well as emails. Once done, they are led back to the index page to continue browsing. 
+    
 * As a potential member, I want to see other members' experiences and testimonials so I can feel more comfortable about what to expect 
-    * At the end of the Home page, a section showcases testimonials from past and current members, highlighting their experiences over time. This helps new visitors gain insight into the supportive and welcoming environment at Zenair Wellness Center. 
+    * At the end of the Home page, a section showcases testimonials from past and current members, highlighting their experiences over time. This helps new visitors gain insight into the supportive and welcoming environment at Zenair Wellness Center. 
 
 ### Performance
 
@@ -406,31 +406,31 @@ Lighthouse Success Desktop
 
 * **Setting Body to 2000px and resizing photos** — The Lighthouse results initially for the Index and Classes page indicated that the photos were too large for the page, leading to longer loading times and a poor user experience. 
 
-     - __Fix:__  When I Showed this to my mentor, his solution was to set a max width of 2000px for the Body of the page, resize the photos to 2000px max, and change them to .webp instead of .jpg. This resulted in the pages getting the results from Lighthouse mentioned below
+     - __Fix:__ When I Showed this to my mentor, his solution was to set a max width of 2000px for the Body of the page, resize the photos to 2000px max, and change them to .webp instead of .jpg. This resulted in the pages getting the results from Lighthouse mentioned below
 
 * **Nav-Menu dropdown appearing on Left side of screen** — When I first added the Nav Menu, the drop-down section was not correctly positioned, causing it to show on the left side of the page instead of under the heading it was created for. 
 
-     - __Fix:__ To fix this, I went through each line and noticed that the area was not within the correct area, then I reinstalled the code for the dropdown and nav-menu, which now shows the dropdown under the correct area after testing. 
+     - __Fix:__ To fix this, I went through each line and noticed that the area was not within the correct area, then I reinstalled the code for the dropdown and nav-menu, which now shows the dropdown under the correct area after testing. 
 
-* **Resizing Pricing Table font to remove overhanding** - After adding the correct information to the pricing table on the Homepage, I noticed it will overflow on the page when in smaller devices. 
+* **Resizing Pricing Table font to remove overhanding** - After adding the correct information to the pricing table on the Homepage, I noticed it will overflow on the page when on smaller devices. 
 
-     - __Fix:__ To combat this, I used a Media Query and changed the font, making it that it was 0.8rem on small decided, and increases to 1.3?rem on larger devices. 
+     - __Fix:__ To combat this, I used a Media Query and changed the font, making it that it was 0.8rem on small decided, and increasing to 1.1rem on larger devices. 
 
 * **Using bootstrap arrangement for spacing and location of classes section** - During the sizing and styling of the Class section, there was an issue with the spacing, where the Zumba class would not be aligned Center and the other classes would not align left or right respectively. 
 
-     - __Fix:__ I referenced the Boardwalk Games coding and Bootstraps Documents, realizing the Row and containing classes were not in the correct place, and the column sizes were incorrect. In correcting this, The X formation was possible, allowing it to form in a single line on Mobile devices and in the X formation on Desktop and tablets. This looks different from the Wireframes as it was agreed this styling was preferred to the original.  
+     - __Fix:__ I referenced the Boardwalk Games coding and Bootstraps Documents, realizing the Row and containing classes were not in the correct place, and the column sizes were incorrect. In correcting this, The X formation was possible, allowing it to form in a single line on Mobile devices and in the X formation on Desktop and tablets. This looks different from the Wireframes as it was agreed this styling was preferred to the original.  
 
-* **Sizing carousel on home page** - When initally adding the carousel, it only covered a part of the header section. Per the wireframe, this was to spread across the entire page which bootstrap did not have any direct classes for. 
+* **Sizing carousel on home page** - When initially adding the carousel, it only covered a part of the header section. Per the wireframe, this was to spread across the entire page which Bootstrap did not have any direct classes for. 
 
-     - __Fix:__ Fixing this took some time due to spacing. Ultimatly it was fixed after finding online code with CSS that assisted with the sizing and location of the photots. 
+     - __Fix:__ Fixing this took some time due to spacing. Ultimately it was fixed after finding online code with CSS that assisted with the sizing and location of the photos. 
 
-* **Reconnecting Accordion on FAQ not to open together** - Once working on the FAQ section, there were dificulties getting the colours to show correctly as the bootstraps classes catered to the same thing in different areas, as well as a problem where, as the Accordion was duplicated, both sections were opening simultaniously. 
+* **Reconnecting Accordion on FAQ not to open together** - Once working on the FAQ section, there were difficulties getting the colours to show correctly as the bootstraps classes catered to the same thing in different areas, as well as a problem where, as the Accordion was duplicated, both sections were opening simultaneously. 
 
-     - __Fix:__ The fix was to overwrite the colour classes in Accordion library, allowing me to customize them in the uniformed colour pallet. To prevent the tabs from opening together, I had to change the data-bs-target, aria-controls, data-bs-parent and ID, making them unique to each tab, preventing any further bugs. 
+     - __Fix:__ The fix was to overwrite the colour classes in the Accordion library, allowing me to customize them in the uniformed colour pallet. To prevent the tabs from opening together, I had to change the data-bs-target, aria-controls, data-bs-parent and ID, making them unique to each tab, preventing any further bugs. 
 
-* **Spacing and sizing of Social media icons** - Upon first adding the Social Icons in the Nav-Menu, it was first taken added to the list area, which worked visually, but was shown to not to be allowed in the coding rules, pointed out by the HTML Verification check.  
+* **Spacing and sizing of Social media icons** - Upon first adding the Social Icons in the Nav-Menu, it was first added to the list area, which worked visually, but was shown not to be allowed in the coding rules, pointed out by the HTML Verification check.  
 
-     - __Fix:__ Initally it was taken from the list codes, and was showing beside the logo incorrectly. I then tried adding padding or the flex display CSS, however it was not responisive on all screen sizes. Ultimatly I was able to add it as a list item, that was able to keep the icons in the correct area, and now being verified by the HTML Verification check. 
+     - __Fix:__ Initially it was taken from the list codes, and was showing beside the logo incorrectly. I then tried adding padding or the flex display CSS, however, it was not responsive on all screen sizes. Ultimately I was able to add it as a list item, that was able to keep the icons in the correct area, and now being verified by the HTML Verification check. 
 
 
 ### Remaining Bugs
@@ -478,7 +478,7 @@ Further details on completing the final step are on the GitHub ['Fork a Repo'](h
 
 * [Balsamiq](https://balsamiq.com/) - Used to build wireframes in the Skelton phase. 
 * [GitHub](https://github.com/) - As a hosting repository for the deployment site. 
-* [GitPod](https://gitpod.io/) and [Visual Studio Code](https://code.visualstudio.com/) - for writing the code. Using the command line for committing and pushing to Git Hub.  website was coded using HTML, Bootstrap & CCS, with used for an IDE.
+* [GitPod](https://gitpod.io/) and [Visual Studio Code](https://code.visualstudio.com/) - for writing the code. Using the command line for committing and pushing to Git Hub.  The website was coded using HTML, Bootstrap & CCS, with used for an IDE.
 * [W3schools](https://www.w3schools.com/) - Source of 'How to...' information throughout the build.
 * [Stackoverflow](https://stackoverflow.com/) - Source of 'How to...' information throughout the build.
 * [iloveimg](www.iloveimg.com) - For compressing images to improve page load time.
@@ -492,7 +492,7 @@ Further details on completing the final step are on the GitHub ['Fork a Repo'](h
 
 * [Love Running](https://github.com/DaniqueJ-R/Love-Running-Template) - for inspiration on the schedule element and text overlay for the hero image and a reference for certain coding aspects throughout the build
 * [Boardwalk Games](https://github.com/DaniqueJ-R/boardwalk-games) - for inspiration on the carousel, booking form, footer, and nav-bar elements, and a reference for certain coding aspects throughout the build
-* [CodePen](https://codepen.io/Washable/pen/Oxqjbq) - Fot text only carousel for testemonies.
+* [CodePen](https://codepen.io/Washable/pen/Oxqjbq) - For text-only carousel for testemonies.
 * [stackoverflow](https://stackoverflow.com/questions/33642916/how-do-i-make-my-bootstrap-carousel-the-full-width-of-the-page) - For header carousel to cover screen with overlay
 
 ### Content
