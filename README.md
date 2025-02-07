@@ -17,12 +17,12 @@ The Zenair Wellness Center is a service that provides structured and fun fitness
 
 ## Index – Table of Contents
 
-* [User Experience R&D](#user-experience-research-and-design)
- * [Strategy](#Strategy)
- * [Scope](#Scope)
- * [Structure](#Structure)
- * [Skeleton](#Skeleton)
- * [Surface](#Surface)
+* [User Experience](#user-experience)
+     * [Strategy](#strategy)
+     * [Scope](#scope)
+     * [Structure](#structure)
+     * [Skeleton](#skeleton)
+     * [Surface](#surface)
 * [Features](#features)
 * [Testing](#testing)
 * [Bugs](#bugs)
@@ -31,7 +31,7 @@ The Zenair Wellness Center is a service that provides structured and fun fitness
 
 *** 
 
-## User Experience Research and Design
+## User Experience
 
 ### Strategy
 
@@ -404,33 +404,33 @@ Lighthouse Success Desktop
 
 ### Bug Fixes/ General Improvements 
 
-* **Setting Body to 2000px and resizing photos** — The Lighthouse results initially for the Index and Classes page indicated that the photos were too large for the page, leading to longer loading times and a poor user experience. 
+- **Setting Body to 2000px and resizing photos** — The Lighthouse results initially for the Index and Classes page indicated that the photos were too large for the page, leading to longer loading times and a poor user experience. 
 
-     - __Fix:__ When I Showed this to my mentor, his solution was to set a max width of 2000px for the Body of the page, resize the photos to 2000px max, and change them to .webp instead of .jpg. This resulted in the pages getting the results from Lighthouse mentioned below
+- _Fix:_ When I Showed this to my mentor, his solution was to set a max width of 2000px for the Body of the page, resize the photos to 2000px max, and change them to .webp instead of .jpg. This resulted in the pages getting the results from Lighthouse mentioned below
 
 * **Nav-Menu dropdown appearing on Left side of screen** — When I first added the Nav Menu, the drop-down section was not correctly positioned, causing it to show on the left side of the page instead of under the heading it was created for. 
 
-     - __Fix:__ To fix this, I went through each line and noticed that the area was not within the correct area, then I reinstalled the code for the dropdown and nav-menu, which now shows the dropdown under the correct area after testing. 
+- _Fix:_ To fix this, I went through each line and noticed that the area was not within the correct area, then I reinstalled the code for the dropdown and nav-menu, which now shows the dropdown under the correct area after testing. 
 
 * **Resizing Pricing Table font to remove overhanding** - After adding the correct information to the pricing table on the Homepage, I noticed it will overflow on the page when on smaller devices. 
 
-     - __Fix:__ To combat this, I used a Media Query and changed the font, making it that it was 0.8rem on small decided, and increasing to 1.1rem on larger devices. 
+- _Fix:_ To combat this, I used a Media Query and changed the font, making it that it was 0.8rem on small decided, and increasing to 1.1rem on larger devices. 
 
 * **Using bootstrap arrangement for spacing and location of classes section** - During the sizing and styling of the Class section, there was an issue with the spacing, where the Zumba class would not be aligned Center and the other classes would not align left or right respectively. 
 
-     - __Fix:__ I referenced the Boardwalk Games coding and Bootstraps Documents, realizing the Row and containing classes were not in the correct place, and the column sizes were incorrect. In correcting this, The X formation was possible, allowing it to form in a single line on Mobile devices and in the X formation on Desktop and tablets. This looks different from the Wireframes as it was agreed this styling was preferred to the original.  
+- _Fix:_ I referenced the Boardwalk Games coding and Bootstraps Documents, realizing the Row and containing classes were not in the correct place, and the column sizes were incorrect. In correcting this, The X formation was possible, allowing it to form in a single line on Mobile devices and in the X formation on Desktop and tablets. This looks different from the Wireframes as it was agreed this styling was preferred to the original.  
 
 * **Sizing carousel on home page** - When initially adding the carousel, it only covered a part of the header section. Per the wireframe, this was to spread across the entire page which Bootstrap did not have any direct classes for. 
 
-     - __Fix:__ Fixing this took some time due to spacing. Ultimately it was fixed after finding online code with CSS that assisted with the sizing and location of the photos. 
+- _Fix:_ Fixing this took some time due to spacing. Ultimately it was fixed after finding online code with CSS that assisted with the sizing and location of the photos. 
 
 * **Reconnecting Accordion on FAQ not to open together** - Once working on the FAQ section, there were difficulties getting the colours to show correctly as the bootstraps classes catered to the same thing in different areas, as well as a problem where, as the Accordion was duplicated, both sections were opening simultaneously. 
 
-     - __Fix:__ The fix was to overwrite the colour classes in the Accordion library, allowing me to customize them in the uniformed colour pallet. To prevent the tabs from opening together, I had to change the data-bs-target, aria-controls, data-bs-parent and ID, making them unique to each tab, preventing any further bugs. 
+- _Fix:_ The fix was to overwrite the colour classes in the Accordion library, allowing me to customize them in the uniformed colour pallet. To prevent the tabs from opening together, I had to change the data-bs-target, aria-controls, data-bs-parent and ID, making them unique to each tab, preventing any further bugs. 
 
 * **Spacing and sizing of Social media icons** - Upon first adding the Social Icons in the Nav-Menu, it was first added to the list area, which worked visually, but was shown not to be allowed in the coding rules, pointed out by the HTML Verification check.  
 
-     - __Fix:__ Initially it was taken from the list codes, and was showing beside the logo incorrectly. I then tried adding padding or the flex display CSS, however, it was not responsive on all screen sizes. Ultimately I was able to add it as a list item, that was able to keep the icons in the correct area, and now being verified by the HTML Verification check. 
+- _Fix:_ Initially it was taken from the list codes, and was showing beside the logo incorrectly. I then tried adding padding or the flex display CSS, however, it was not responsive on all screen sizes. Ultimately I was able to add it as a list item, that was able to keep the icons in the correct area, and now being verified by the HTML Verification check. 
 
 
 ### Remaining Bugs
